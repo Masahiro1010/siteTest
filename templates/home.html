@@ -1,0 +1,16 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Image Test</title>
+    <style>
+        body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:sans-serif}
+        img{max-width:90vw;height:auto;box-shadow:0 10px 30px rgba(0,0,0,.15);border-radius:12px}
+    </style>
+</head>
+<body>
+    <img src="{% static 'img/test.jpg' %}" alt="test">
+</body>
+</html>
